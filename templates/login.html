@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="login-container">
+    <div class="login-card">
+        <h1>Hospital Login</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="POST">
+            <input type="text" name="hospital_id" placeholder="Enter Hospital ID" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI-Powered Skin Cancer Diagnosis</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Login Panel -->
+    <div id="login-panel" class="panel">
+        <h2>🏥 Hospital Login</h2>
+        <input type="text" id="hospitalId" placeholder="Enter Hospital ID">
+        <button id="loginBtn"><i class="fas fa-sign-in-alt"></i> Login</button>
+        <p id="login-msg" class="msg"></p>
+    </div>
+
+    <!-- Prediction Panel -->
+    <div id="prediction-panel" class="panel hidden">
+        <h2>🩺 AI-Powered Skin Cancer Diagnosis</h2>
+        <p>Upload skin lesion image for instant AI analysis</p>
+
+        <input type="file" id="imageFile" accept="image/*">
+        <div class="btn-group">
+            <button id="predictBtn"><i class="fas fa-microscope"></i> Predict</button>
+            <button id="logoutBtn"><i class="fas fa-right-from-bracket"></i> Logout</button>
+        </div>
+
+        <p id="predict-msg" class="msg"></p>
+
+        <!-- Prediction Result -->
+        <div id="result" class="hidden result-card animate-slide">
+            <h3>Prediction Result</h3>
+            <p id="diagnosis"></p>
+            <p id="confidence"></p>
+            <p id="risk"><i class="fas fa-exclamation-triangle"></i> Risk Level:</p>
+
+            <!-- Confidence Bar -->
+            <div class="confidence-container">
+                <div id="confidence-bar" class="bar"></div>
+            </div>
+
+            <!-- Grad-CAM -->
+            <img id="gradcamImg" alt="Grad-CAM" class="gradcam-img animate-fade">
+
+            <!-- PDF Download -->
+           <a id="downloadPdf" class="btn btn-pdf" style="display:none;">
+    <i class="fas fa-file-pdf"></i> Download PDF
+</a>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</body>
+</html>

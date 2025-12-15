@@ -1,0 +1,158 @@
+/* Background gradient animation */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #e0f7fa, #80deea, #fce4ec, #f3e5f5);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.panel h2 {
+    color: #0277bd;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease;
+}
+
+.panel input[type="text"], .panel input[type="file"] {
+    width: 80%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease;
+}
+
+.panel input[type="text"]:focus, .panel input[type="file"]:focus {
+    transform: scale(1.02);
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#0288d1,#26c6da);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.msg {
+    color: #e53935;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hidden { display: none; }
+
+/* Prediction Result Card */
+.result-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f1f8e9;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+/* Confidence Bar */
+.confidence-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 12px;
+    height: 22px;
+    margin: 10px 0;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 12px;
+    transition: width 1s ease, background 1s ease;
+}
+
+.prediction-danger { background: linear-gradient(90deg, #e74c3c, #c0392b); }
+.prediction-safe { background: linear-gradient(90deg, #2ecc71, #27ae60); }
+
+/* Grad-CAM image */
+.gradcam-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 15px 0;
+    border-radius: 12px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* PDF Download button */
+.download-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #c62828;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover { background-color: #b71c1c; transform: scale(1.05); }
+
+/* Animations */
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+@keyframes fadeInDown { from {opacity:0; transform: translateY(-30px);} to {opacity:1; transform: translateY(0);} }
+.animate-slide { animation: slideUp 0.6s ease; }
+@keyframes slideUp { from {opacity:0; transform: translateY(50px);} to {opacity:1; transform: translateY(0);} }
+.animate-fade { animation: fadeIn 1s ease; }
+#gradcamImg {
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    display: none;           /* initially hidden */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#gradcamImg.fade-in {
+    display: block;
+    opacity: 1;
+}
+.btn-pdf {
+    background: linear-gradient(90deg, #ff4d4d, #ff9966);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-pdf:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,41 @@
+timestamp,image,predicted,confidence,feedback
+2025-10-09 16:08:27,img2.jpeg,Benign,0,Safe ✅ Normal skin issue
+2025-10-09 16:15:23,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:20:26,img.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:27:49,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:28:29,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:28:54,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:36:11,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:40:43,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:46:22,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:46:27,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:49:13,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:49:54,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 16:55:55,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 17:04:45,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 17:13:28,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 17:16:05,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 17:19:29,img1.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-10-09 17:38:19,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-09 17:38:59,img2.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-10-09 17:54:05,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-10 08:49:38,img2.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-10-10 08:51:21,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-10 09:10:15,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-10 10:04:51,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-11 09:31:51,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-15 14:40:11,img.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-15 14:41:28,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-15 14:41:46,img2.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-10-16 08:44:31,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-16 08:46:20,img2.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-10-30 13:36:17,img.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-10-30 13:37:13,img1.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-11-17 14:52:03,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-11-17 14:53:00,img2.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-11-30 20:59:23,img2.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-11-30 21:00:33,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-12-09 14:19:27,img2.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
+2025-12-09 14:20:36,img1.jpeg,Benign,100,Safe ✅ Normal skin issue
+2025-12-15 15:33:45,download.jpg,Benign,100,Safe ✅ Normal skin issue
+2025-12-15 15:36:03,images.jpg,Malignant,100,CANCER ALERT ❌ Immediate action required!
