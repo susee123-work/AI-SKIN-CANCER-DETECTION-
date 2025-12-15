@@ -1,1 +1,12 @@
-/dataset
+__pycache__/
+*.pyc
+data/
+dataset/
+venv/
+*.pth.backup
+temp*
+.DS_Store
+.env
+download_isic,py
+train.py
+calibration.py
